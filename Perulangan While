@@ -1,0 +1,18 @@
+package perulanganwhile;
+import java.util.Scanner;
+public class PerulanganWhile {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int angkaRahasia = 7;
+        int tebakan = 0;
+        while (tebakan != angkaRahasia) {
+            System.out.print("Tebak angka: ");
+            tebakan = scan.nextInt();
+            if (tebakan != angkaRahasia) {
+                System.out.println("Salah!");
+            }
+        }
+        System.out.println("Benar! Angka rahasia adalah " + angkaRahasia);
+        scan.close();
+    }
+}
